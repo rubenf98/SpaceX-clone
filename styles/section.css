@@ -1,0 +1,92 @@
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 200px 0px;
+    box-sizing: border-box;
+}
+
+.wallpaper1 {
+    background-image: url("../images/wallpaper.jpg");
+}
+
+.wallpaper2 {
+    background-image: url("../images/wallpaper1.jpg");
+}
+
+.header .content {
+    color: white;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.header .content h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 100;
+}
+
+.header .content h2 {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 0px;
+
+}
+
+.header .content button {
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 2px solid white;
+    color: white;
+    padding: 16px 60px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.header .content button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .header .content h4 {
+        font-size: 18px;
+    }
+    
+    .header .content h2 {
+        font-size: 32px;
+    
+    }
+
+    .header .content button {
+        padding: 12px 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header .content h4 {
+        font-size: 16px;
+    }
+    
+    .header .content h2 {
+        font-size: 28px;
+    
+    }
+
+    .header .content button {
+        padding: 8px 20px;
+    }
+}

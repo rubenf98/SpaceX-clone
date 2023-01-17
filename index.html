@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/section.css">
+    <link rel="stylesheet" href="./styles/sidenav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>SpaceX</title>
+</head>
+
+<body>
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Mission</a>
+        <a href="#">Launches</a>
+        <a href="#">Careers</a>
+        <a href="#">Updates</a>
+        <a href="#">Shop</a>
+    </div>
+
+    <div id="navbar" class="navbar-container">
+        <div class="navbar">
+            <div class="navbar-links content">
+                <a href="./index.html"><img class="logo" src="./images/logo.svg" alt="SpaceX"></a>
+                <a href="#">falcon 9</a>
+                <a href="#">falcon heavy</a>
+                <a href="#">dragon</a>
+                <a href="#">starship</a>
+                <a href="#">human spaceflight</a>
+                <a href="#">rideshare</a>
+                <a href="#">starshield</a>
+                <a href="./starlink.html">starlink</a>
+            </div>
+            <div class="navbar-links menu">
+                <a href="#">shop</a>
+                <img onclick="openNav()" src="./images/menu.svg" alt="menu">
+            </div>
+
+        </div>
+    </div>
+    <section class="header wallpaper1">
+        <div class="content">
+            <h4>recent launch</h4>
+            <h2>USSF-67 MISSION</h2>
+            <button>
+                watch
+            </button>
+        </div>
+    </section>
+
+    <section class="header wallpaper2">
+        <div class="content">
+            <h4>Upcoming Launch</h4>
+            <h2>starlink mission</h2>
+            <button>
+                learn more
+            </button>
+        </div>
+    </section>
+
+    <script src="./scripts/navbarScripts.js"></script>
+</body>
+
+</html>
