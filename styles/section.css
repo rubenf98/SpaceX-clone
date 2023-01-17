@@ -9,6 +9,7 @@
     flex-direction: column;
     padding: 200px 0px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .wallpaper1 {
@@ -26,6 +27,7 @@
     margin: 0px auto;
     padding: 0px 20px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .header .content h4 {
@@ -61,14 +63,45 @@
     color: black;
 }
 
+@keyframes float {
+    0% {
+        bottom: 50px;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    60% {
+        bottom: 30px;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.header .arrow {
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: float 3s ease-in-out infinite;
+}
+
 @media screen and (max-width: 767px) {
     .header .content h4 {
         font-size: 18px;
     }
-    
+
     .header .content h2 {
         font-size: 32px;
-    
+
     }
 
     .header .content button {
@@ -80,10 +113,10 @@
     .header .content h4 {
         font-size: 16px;
     }
-    
+
     .header .content h2 {
         font-size: 28px;
-    
+
     }
 
     .header .content button {
