@@ -3,17 +3,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#navbar {
-    transition: all .3s ease;
-}
-
 .navbar-container {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%;
-    background-color: transparent;
     padding: 0px 20px;
     box-sizing: border-box;
 }
@@ -57,13 +52,17 @@ body {
     max-width: 1400px;
     margin: auto;
     display: flex;
-    gap: 30px;
     align-items: center;
+    gap: 30px;
     height: 100%;
 }
 
+#navbar {
+    transition: all .3s ease;
+}
+
 @media screen and (max-width: 1200px) {
-    .navbar-links a {
+    .navbar-links .link {
         display: none;
     }
 
@@ -75,6 +74,10 @@ body {
 @media screen and (max-width: 767px) {
     .navbar .menu {
         right: 20px;
+    }
+
+    .navbar .menu  a{
+        display: none;
     }
 }
 
